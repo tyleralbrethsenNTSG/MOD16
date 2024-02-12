@@ -18,10 +18,10 @@ data:
     LAI: HISTARFM/LAI
 optimization:
   platform: MODIS
-  backend_template: "/home/tyleralbrethsen/20231218_MOD16_%s_calibration_PFT%d.nc4"
+  backend_template: "/home/tyleralbrethsen/20240208_MOD16_%s_calibration_PFT%d.nc4"
   prior: "/home/tyleralbrethsen/ABoVE_30m_ET/Code/MOD16/mod16/data/MOD16_BPLUT_prior_above_et_20240123.yaml"
   chains: 3
-  draws: 1000
+  draws: 20000
   tune: scaling
   scaling: 0.001
   objective: RMSD
